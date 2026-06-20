@@ -1,0 +1,27 @@
+﻿apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: finops-service-app
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+spec:
+  project: healthcare
+  source:
+    repoURL: https://github.com/Arun-Simon/elderping-gitops.git
+    targetRevision: HEAD
+    path: charts/finops-service
+    helm:
+      releaseName: finops-service
+      valueFiles:
+        - values.yaml
+        - ../../environments/dev/finops-service-values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: healthcare
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,21 @@
+# Staging environment values override
+replicaCount: 2
+
+resources:
+  limits:
+    cpu: 400m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+env:
+  environment: "staging"
+  dbHost: "report-db-staging"
+  dbName: "report_db_staging"
+
+
+
+image:
+  repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-report-service
+  tag: stage-latest

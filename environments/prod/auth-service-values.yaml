@@ -1,0 +1,21 @@
+# Production environment values override
+replicaCount: 3
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1024Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
+
+env:
+  environment: "prod"
+  dbHost: "auth-db-prod.internal"
+  dbName: "users_db_prod"
+  cognitoUserPoolId: "us-east-1_ProdPoolId"
+
+
+image:
+  repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-auth-service
+  tag: prod-latest

@@ -1,0 +1,22 @@
+# Production environment values override
+replicaCount: 3
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1024Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
+
+env:
+  environment: "prod"
+  dbHost: "appointment-db-prod.internal"
+  dbName: "appointment_db_prod"
+
+
+
+
+image:
+  repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-appointment-service
+  tag: prod-latest

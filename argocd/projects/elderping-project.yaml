@@ -1,0 +1,79 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: healthcare
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  description: "ArgoCD Project for ElderPinq Healthcare and Platform workloads"
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: healthcare
+      server: https://kubernetes.default.svc
+    - namespace: platform
+      server: https://kubernetes.default.svc
+    - namespace: monitoring
+      server: https://kubernetes.default.svc
+    - namespace: security
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: monitoring
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  description: "ArgoCD Project for EKS Metrics, Aggregation, and Observability Stacks"
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: monitoring
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: platform
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  description: "ArgoCD Project for EKS Infrastructure Platform Controllers"
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: platform
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: security
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  description: "ArgoCD Project for EKS Identity, Secrets Management, and Certificates"
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: security
+      server: https://kubernetes.default.svc
+    - namespace: healthcare
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
