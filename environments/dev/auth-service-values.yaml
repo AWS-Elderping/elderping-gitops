@@ -17,4 +17,4 @@ env:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-auth-service
-  tag: "sha-79bc073"
+  tag: "sha-2f28461"
