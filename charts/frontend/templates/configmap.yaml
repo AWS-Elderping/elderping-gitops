@@ -12,5 +12,6 @@ data:
   DB_NAME: "{{ .Values.env.dbName }}"
   DB_USER: "{{ .Values.env.dbUser }}"
   PGSSLMODE: "require"
+  NODE_TLS_REJECT_UNAUTHORIZED: "0"
   AWS_REGION: "{{ .Values.env.awsRegion }}"
   COGNITO_USER_POOL_ID: "{{ .Values.env.cognitoUserPoolId }}"
