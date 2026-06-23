@@ -18,4 +18,4 @@ env:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-reminder-service
-  tag: "sha-3c39b62"
+  tag: "sha-dfe2cd7"
