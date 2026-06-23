@@ -20,4 +20,4 @@ serviceAccount:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-health-service
-  tag: "sha-87c014a"
+  tag: "sha-79bc073"
