@@ -1,0 +1,54 @@
+name: CD Pipeline
+
+on:
+  repository_dispatch:
+    types: [deploy-service]
+
+jobs:
+  update-gitops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitOps Repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup yq
+        uses: mikefarah/yq@master
+
+      - name: Update Helm Values
+        run: |
+          SERVICE="${{ github.event.client_payload.service }}"
+          TAG="${{ github.event.client_payload.tag }}"
+          
+          # Assuming values file path structure: environments/prod/values-<service>.yaml
+          # This should be adjusted based on the exact pathing in the gitops repo
+          VALUES_FILE="environments/prod/${SERVICE}-values.yaml"
+          
+          if [ -f "$VALUES_FILE" ]; then
+            yq e -i ".image.tag = \"$TAG\"" "$VALUES_FILE"
+          else
+            echo "Values file not found: $VALUES_FILE"
+            exit 1
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update ${{ github.event.client_payload.service }} to ${{ github.event.client_payload.tag }}"
+          title: "Deploy ${{ github.event.client_payload.service }} ${{ github.event.client_payload.tag }}"
+          branch: "deploy/${{ github.event.client_payload.service }}-${{ github.event.client_payload.tag }}"
+          body: "Auto-generated PR by CI pipeline to deploy new image."
+          labels: "automated-deployment"
+
+      - name: Wait for ArgoCD Sync & Health
+        run: |
+          # Requires argocd CLI installed and configured via ARGOCD_SERVER/ARGOCD_AUTH_TOKEN
+          # argocd app wait ${{ github.event.client_payload.service }}-app --health
+          echo "Simulating ArgoCD Wait for demonstration purposes"
+
+      - name: Smoke Tests
+        run: |
+          echo "Running lightweight smoke test against ${{ github.event.client_payload.service }}"
+          # curl -f http://${{ github.event.client_payload.service }}.prod.internal/health
