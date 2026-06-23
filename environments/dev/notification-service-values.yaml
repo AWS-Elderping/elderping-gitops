@@ -1,13 +1,13 @@
 # Dev environment values override
-replicaCount: 1
+replicaCount: 2
 
 resources:
   limits:
-    cpu: 200m
-    memory: 256Mi
+    cpu: 500m
+    memory: 512Mi
   requests:
-    cpu: 50m
-    memory: 64Mi
+    cpu: 100m
+    memory: 128Mi
 
 env:
   environment: "dev"
