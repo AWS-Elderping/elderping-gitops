@@ -11,5 +11,6 @@ data:
   DB_PORT: "{{ .Values.env.dbPort }}"
   DB_NAME: "{{ .Values.env.dbName }}"
   DB_USER: "{{ .Values.env.dbUser }}"
+  PGSSLMODE: "require"
   AWS_REGION: "{{ .Values.env.awsRegion }}"
   COGNITO_USER_POOL_ID: "{{ .Values.env.cognitoUserPoolId }}"
