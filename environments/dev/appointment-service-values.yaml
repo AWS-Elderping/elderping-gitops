@@ -18,4 +18,4 @@ env:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-appointment-service
-  tag: "sha-9b4b9b3"
+  tag: "sha-21befaa"
