@@ -18,4 +18,4 @@ env:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-audit-service
-  tag: "sha-4229938"
+  tag: "sha-bcd288f"
