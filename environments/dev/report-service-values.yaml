@@ -20,4 +20,4 @@ serviceAccount:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-report-service
-  tag: dev-latest
+  tag: "sha-9d152cb"
