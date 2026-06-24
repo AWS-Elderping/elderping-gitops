@@ -13,4 +13,4 @@ env:
   dbName: "appointment_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-appointment-service
-  tag: 32ba00add8119203e410c076c54093aa4ef5fcbb
+  tag: 22371568b019d3a10d8970274b35a283ec5e6478
