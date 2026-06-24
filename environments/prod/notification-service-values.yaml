@@ -13,4 +13,4 @@ env:
   dbName: "notification_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-notification-service
-  tag: 194d18a16f0a4d03cc189075cab924c4dfabbf82
+  tag: 0e637b0c0791f31dde1e834405bade697ef08a49
