@@ -13,4 +13,4 @@ env:
   dbName: "appointment_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-appointment-service
-  tag: 079ba938b4aeb3a42b89cf213a1caa337bbfb60b
+  tag: d87ec1e182fcba916db56223b95a36db5c513a1f
