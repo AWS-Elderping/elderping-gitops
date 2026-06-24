@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "finops-db-dev"
   dbName: "finops_db_dev"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-finops-service
-  tag: "ae7b65f766ac3c65f8dda7c9950546408268cdba"
+  tag: "ff039d0b3a4b7d91fcc3c0584f7ee870582cd64e"
