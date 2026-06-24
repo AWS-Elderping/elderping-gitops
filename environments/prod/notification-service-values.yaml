@@ -1,6 +1,5 @@
 # Production environment values override
 replicaCount: 3
-
 resources:
   limits:
     cpu: 1000m
@@ -8,15 +7,10 @@ resources:
   requests:
     cpu: 250m
     memory: 256Mi
-
 env:
   environment: "prod"
   dbHost: "notification-db-prod.internal"
   dbName: "notification_db_prod"
-
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-notification-service
-  tag: prod-latest
+  tag: 1b8808e0c0424e91e3f1a318328fcf9572dd1ef8
