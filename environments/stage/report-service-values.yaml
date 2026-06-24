@@ -13,4 +13,4 @@ env:
   dbName: "report_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-report-service
-  tag: af5a97cc237012c4e5d5c8e72505b1d5aef3f1ad
+  tag: 621b9c677b27f17e2b2ca3500e3f485d393eaf5b
