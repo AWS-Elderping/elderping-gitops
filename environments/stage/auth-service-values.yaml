@@ -1,6 +1,5 @@
 # Staging environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 400m
@@ -8,13 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "staging"
   dbHost: "auth-db-staging"
   dbName: "users_db_staging"
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-auth-service
-  tag: stage-latest
+  tag: 7e195e67f312d19b07574460e80e4985a6598857

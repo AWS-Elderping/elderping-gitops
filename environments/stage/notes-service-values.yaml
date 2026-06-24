@@ -1,6 +1,5 @@
 # Staging environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 400m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "staging"
   dbHost: "notes-db-staging"
   dbName: "notes_db_staging"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-notes-service
-  tag: stage-latest
+  tag: 31936b8997e20e34955edf9d4324b72096d9b2bf

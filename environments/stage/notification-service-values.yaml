@@ -1,6 +1,5 @@
 # Staging environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 400m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "staging"
   dbHost: "notification-db-staging"
   dbName: "notification_db_staging"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-notification-service
-  tag: stage-latest
+  tag: 953501b192ec067168fd89d17405c51427720369
