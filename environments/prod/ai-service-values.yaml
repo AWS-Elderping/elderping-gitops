@@ -1,6 +1,5 @@
 # Production environment values override
 replicaCount: 3
-
 resources:
   limits:
     cpu: 1000m
@@ -8,19 +7,13 @@ resources:
   requests:
     cpu: 250m
     memory: 256Mi
-
 env:
   environment: "prod"
   dbHost: "ai-db-prod.internal"
   dbName: "ai_db_prod"
-
-
 serviceAccount:
   annotations:
     eks.amazonaws.com/role-arn: "arn:aws:iam::462355914183:role/elderpinq-prod-bedrock-role"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-ai-service
-  tag: prod-latest
+  tag: 67f724d48c5f935f1ff89f67b2d3ed15a834c435
