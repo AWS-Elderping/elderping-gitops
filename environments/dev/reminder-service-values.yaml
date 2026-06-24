@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "reminder-db-dev"
   dbName: "reminder_db_dev"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-reminder-service
-  tag: "sha-1a75c17"
+  tag: "47326a09d5b23d95614055245c759b74add3d27c"
