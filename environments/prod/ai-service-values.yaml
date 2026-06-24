@@ -16,4 +16,4 @@ serviceAccount:
     eks.amazonaws.com/role-arn: "arn:aws:iam::462355914183:role/elderpinq-prod-bedrock-role"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-ai-service
-  tag: 8dc40357b8f665f433ab028788c2581be5680b4a
+  tag: 91a5e2162622fb872100f0354077bb0eec27e66c
