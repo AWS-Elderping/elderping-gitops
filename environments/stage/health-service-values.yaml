@@ -1,6 +1,5 @@
 # Staging environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 400m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "staging"
   dbHost: "health-db-staging"
   dbName: "health_db_staging"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-health-service
-  tag: stage-latest
+  tag: dcde2b05ce0354e218f55391a7bf42795b62ddbb
