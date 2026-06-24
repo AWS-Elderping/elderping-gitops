@@ -14,4 +14,4 @@ env:
   cognitoUserPoolId: "us-east-1_ProdPoolId"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-auth-service
-  tag: 342ec2c3964e58bba7f9694ca156242ea0c6f670
+  tag: 9d4265c3b6c23ef61cc706c2c86ee03d831cbff0
