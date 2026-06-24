@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "notification-db-dev"
   dbName: "notification_db_dev"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-notification-service
-  tag: "sha-1a75c17"
+  tag: "953501b192ec067168fd89d17405c51427720369"
