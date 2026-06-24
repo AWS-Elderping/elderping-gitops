@@ -13,4 +13,4 @@ env:
   dbName: "alert_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-alert-service
-  tag: f1bc4a7bbaa43df722dc113ac91e9ed45a3ac9d3
+  tag: 60e98a37e993770fb5afb99593e89ec2e9d1b42e
