@@ -13,4 +13,4 @@ env:
   dbName: "health_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-health-service
-  tag: b7d631999e889188797d42b9c96993cf05cc3a7e
+  tag: e4f8edea19093208a1aed8eb6e2b11a7edf96bf7
