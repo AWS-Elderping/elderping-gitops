@@ -13,4 +13,4 @@ env:
   dbName: "audit_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-audit-service
-  tag: d0a9f5cf12edb13e683e3bbfb76e117eb04a55f0
+  tag: 18cba389d9781211f14cd35fcc9b292051e88f6a
