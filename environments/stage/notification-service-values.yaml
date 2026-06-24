@@ -13,4 +13,4 @@ env:
   dbName: "notification_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-notification-service
-  tag: 47eaac87fdcbd74e5484c985bdd2aea954bd6f94
+  tag: c2e214da733fdee9f9a4fa1033fa07ae1a96c20d
