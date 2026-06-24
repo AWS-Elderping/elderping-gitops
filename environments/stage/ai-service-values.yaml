@@ -1,6 +1,5 @@
 # Staging environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 400m
@@ -8,18 +7,13 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "staging"
   dbHost: "ai-db-staging"
   dbName: "ai_db_staging"
-
 serviceAccount:
   annotations:
     eks.amazonaws.com/role-arn: "arn:aws:iam::462355914183:role/elderpinq-staging-bedrock-role"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-ai-service
-  tag: stage-latest
+  tag: 459b70f091bf63f50b4e21a1e960f053d029e14f
