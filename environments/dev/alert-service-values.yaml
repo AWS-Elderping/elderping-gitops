@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "alert-db-dev"
   dbName: "alert_db_dev"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-alert-service
-  tag: "fb555fbcd996de12bf78f5dea4a689e42f660218"
+  tag: "1662d94ffd58bf3bcca8f19204ec26fd315f0fbc"
