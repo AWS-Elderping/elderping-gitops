@@ -16,4 +16,4 @@ serviceAccount:
     eks.amazonaws.com/role-arn: "arn:aws:iam::462355914183:role/elderpinq-dev-s3-reports-role"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-health-service
-  tag: "99c9101cf53a31a0f5519c2a64f2ef788dce0176"
+  tag: "7b371fe0c528fc1c92f0b85356f608b159d86d5b"
