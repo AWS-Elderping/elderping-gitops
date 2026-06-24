@@ -16,4 +16,4 @@ serviceAccount:
     eks.amazonaws.com/role-arn: "arn:aws:iam::462355914183:role/elderpinq-staging-bedrock-role"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-ai-service
-  tag: 7bc08d0b4846de65db89b5553065fbdef65adc6a
+  tag: 8a7cab25e6af3d63fedee2ee39b1ee007a06b758
