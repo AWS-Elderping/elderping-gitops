@@ -18,4 +18,4 @@ env:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-finops-service
-  tag: "sha-1a75c17"
+  tag: "ae7b65f766ac3c65f8dda7c9950546408268cdba"

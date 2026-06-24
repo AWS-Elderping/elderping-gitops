@@ -20,4 +20,4 @@ serviceAccount:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-report-service
-  tag: "sha-dfe2cd7"
+  tag: "5921a0a2fbcc2aeb11981b41e26cf554afe00c0a"

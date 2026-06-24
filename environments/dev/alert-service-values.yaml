@@ -18,4 +18,4 @@ env:
 
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-alert-service
-  tag: "sha-dfe2cd7"
+  tag: "fb555fbcd996de12bf78f5dea4a689e42f660218"
