@@ -15,3 +15,4 @@ data:
   NODE_TLS_REJECT_UNAUTHORIZED: "0"
   AWS_REGION: "{{ .Values.env.awsRegion }}"
   COGNITO_USER_POOL_ID: "{{ .Values.env.cognitoUserPoolId }}"
+  AI_PROVIDER: "{{ .Values.env.aiProvider | default "aws" }}"
