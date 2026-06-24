@@ -13,4 +13,4 @@ env:
   dbName: "notes_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-notes-service
-  tag: 43f82e2779b42a8308fe431d464bb45abe4d8cb2
+  tag: ab1e2a4b608151552141d24f71f7a6041792d7cf
