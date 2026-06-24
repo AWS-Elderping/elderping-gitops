@@ -13,4 +13,4 @@ env:
   dbName: "audit_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-audit-service
-  tag: 823f0791cbfd724755a78e28df4c095a48de948c
+  tag: ce61a8192f5a294b2b1e8cf8ed4e9787068cda20
