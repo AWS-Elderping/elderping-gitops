@@ -13,4 +13,4 @@ env:
   dbName: "notes_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-notes-service
-  tag: 563e84c266ada209eb3f1b35f4cfe1f2d50a4d23
+  tag: ac274944e64a36f5d02e398ddc1cb5ca5313c533
