@@ -14,7 +14,7 @@ spec:
     helm:
       values: |
         clusterName: elderpinq-dev-eks
-        vpcId: vpc-08921a974df698308
+        vpcId: vpc-05e01c1be7793446a
         serviceAccount:
           create: true
           name: aws-load-balancer-controller
