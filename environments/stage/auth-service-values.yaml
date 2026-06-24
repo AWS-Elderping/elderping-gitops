@@ -13,4 +13,4 @@ env:
   dbName: "users_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-auth-service
-  tag: 03b272316fcda6f72b1e0ba3f9bfac8ed9efda85
+  tag: 7e195e67f312d19b07574460e80e4985a6598857
