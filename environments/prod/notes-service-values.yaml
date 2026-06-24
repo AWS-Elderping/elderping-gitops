@@ -1,6 +1,5 @@
 # Production environment values override
 replicaCount: 3
-
 resources:
   limits:
     cpu: 1000m
@@ -8,15 +7,10 @@ resources:
   requests:
     cpu: 250m
     memory: 256Mi
-
 env:
   environment: "prod"
   dbHost: "notes-db-prod.internal"
   dbName: "notes_db_prod"
-
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-notes-service
-  tag: prod-latest
+  tag: 8c08ef73d597d972b3ea35c94310548415db6fa5
