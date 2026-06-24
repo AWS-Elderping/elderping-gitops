@@ -13,4 +13,4 @@ env:
   dbName: "ui_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-frontend
-  tag: 667bc17e25b626751aa17e770a333edf000009b8
+  tag: 86df0465b505f8d0b5a6ad8471eaff1bf137a6a0
