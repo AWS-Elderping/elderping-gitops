@@ -13,4 +13,4 @@ env:
   dbName: "finops_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-finops-service
-  tag: d9b00fb4a713016004e5f14c657ace97cd0e0517
+  tag: 90478acd32b3f047ef85750a3fe2752cddcfdfbb
