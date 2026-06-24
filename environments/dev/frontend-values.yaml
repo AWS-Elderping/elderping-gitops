@@ -13,4 +13,4 @@ env:
   dbName: "ui_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-frontend
-  tag: "e96db5f663b09306e6710386a8703329700e1827"
+  tag: "59564e30383711e00c153f6da298c9ed92d1fbfc"
