@@ -13,4 +13,4 @@ env:
   dbName: "report_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-report-service
-  tag: 9479817626a5863dc8aa8d36732e952cd9a91e49
+  tag: 5921a0a2fbcc2aeb11981b41e26cf554afe00c0a
