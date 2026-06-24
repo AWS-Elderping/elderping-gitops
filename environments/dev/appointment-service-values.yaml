@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "appointment-db-dev"
   dbName: "appointment_db_dev"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-appointment-service
-  tag: "sha-dfe2cd7"
+  tag: "d78e0b8d0ba98aebb3e331691cf6e8fd8b8b6668"
