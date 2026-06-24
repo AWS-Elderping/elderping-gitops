@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,13 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "auth-db-dev"
   dbName: "users_db_dev"
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-auth-service
-  tag: "7e195e67f312d19b07574460e80e4985a6598857"
+  tag: "c4b12e3d9a0116eea262723a85dfd71bc62a74a3"
