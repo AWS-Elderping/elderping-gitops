@@ -13,4 +13,4 @@ env:
   dbName: "health_db_prod"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-prod-health-service
-  tag: a3e6fb4d67bf6c5e682919b448f17253b8cb4e4d
+  tag: 7156b6af4ec1b3fea843285031b97caded710f50
