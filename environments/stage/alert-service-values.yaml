@@ -13,4 +13,4 @@ env:
   dbName: "alert_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-alert-service
-  tag: 4afae804f8937bef4470579bf58d609c36bfaa60
+  tag: 9ee26c3cbc4f3e902c06a83628f203d1fb50784a
