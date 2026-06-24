@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,14 +7,10 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "notes-db-dev"
   dbName: "notes_db_dev"
-
-
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-notes-service
-  tag: "f959236a88fd2200008972dff467b65aa514512b"
+  tag: "ac274944e64a36f5d02e398ddc1cb5ca5313c533"
