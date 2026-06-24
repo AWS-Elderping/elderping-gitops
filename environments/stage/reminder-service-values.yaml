@@ -13,4 +13,4 @@ env:
   dbName: "reminder_db_staging"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-stage-reminder-service
-  tag: bf7c3d10d12bf418db0cdfa87e7a71a5153c3484
+  tag: c203c8d2b1ffd2d3ba6c91f076b44a6b12f8fdbe
