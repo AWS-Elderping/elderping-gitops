@@ -11,7 +11,6 @@ env:
   environment: "dev"
   dbHost: "auth-db-dev"
   dbName: "users_db_dev"
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-notes-service
-  tag: "d3f06a8f24f47d9145bf5da5acb254f2008904f9"
+  tag: "9b4a6886d73d26a1b080dca669c26d784d8c7a03"
