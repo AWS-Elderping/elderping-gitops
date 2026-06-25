@@ -13,4 +13,4 @@ env:
   dbName: "reminder_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-reminder-service
-  tag: "ff7761385daab0cd41e8ca6a47c560e09c479cb5"
+  tag: "ca5e39986ab090226c75452add78a56960e3ac58"
