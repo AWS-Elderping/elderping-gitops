@@ -49,6 +49,7 @@ env:
   jwtSecret: "temp-secret"
   cognitoUserPoolId: ""
   awsRegion: "us-east-1"
+  authServiceUrl: "http://auth-service:3000"
 
 # Telemetry Configuration
 metrics:

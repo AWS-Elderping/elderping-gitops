@@ -48,6 +48,7 @@ env:
   dbUser: "elderpinq_admin"
   jwtSecret: "temp-secret"
   cognitoUserPoolId: ""
+  cognitoClientId: ""
   awsRegion: "us-east-1"
 
 # Telemetry Configuration

@@ -11,6 +11,9 @@ env:
   environment: "dev"
   dbHost: "auth-db-dev"
   dbName: "users_db_dev"
+  cognitoUserPoolId: "us-east-1_1iUSmbmcY"
+  cognitoClientId: "7jdicu5pmfd37kq1388mlml073"
+
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-auth-service
   tag: "c4b12e3d9a0116eea262723a85dfd71bc62a74a3"
