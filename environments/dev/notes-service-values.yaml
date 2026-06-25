@@ -13,4 +13,4 @@ env:
   dbName: "users_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-notes-service
-  tag: "e1d3400caf52cc80830c990aeab084332628575c"
+  tag: "4d925b7c2513384052560ec4f7fb259aa84e6143"
