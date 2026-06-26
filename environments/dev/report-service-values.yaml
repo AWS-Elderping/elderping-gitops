@@ -1,6 +1,5 @@
 # Dev environment values override
 replicaCount: 2
-
 resources:
   limits:
     cpu: 500m
@@ -8,16 +7,13 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
 env:
   environment: "dev"
   dbHost: "report-db-dev"
   dbName: "report_db_dev"
-
 serviceAccount:
   annotations:
     eks.amazonaws.com/role-arn: "arn:aws:iam::462355914183:role/elderpinq-dev-s3-reports-role"
-
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-report-service
-  tag: "5921a0a2fbcc2aeb11981b41e26cf554afe00c0a"
+  tag: "4e7bb9655fb655d05893cd4741a2428ee64dab2b"
