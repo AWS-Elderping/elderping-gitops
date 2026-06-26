@@ -15,4 +15,4 @@ env:
   cognitoClientId: ""
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-auth-service
-  tag: "b01adfea671f01c50a0427017114469f4f1e9a7c"
+  tag: "139eb17530917f8009ea162a4cc54d94b7a3f199"
