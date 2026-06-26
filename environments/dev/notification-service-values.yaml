@@ -13,4 +13,4 @@ env:
   dbName: "notification_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-notification-service
-  tag: "a9ba7cef92ed7e4a3533a8a2365b5fe444b870b0"
+  tag: "7908826a4464c4458792e4ba673fb6fb04e9c635"
