@@ -13,4 +13,4 @@ env:
   dbName: "audit_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-audit-service
-  tag: "dc6efc1ca1fbba596db3a9ef17b7a9d409e63c84"
+  tag: "caee22fce2c52d387a3f863a7e27b0af1126c89d"
