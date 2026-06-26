@@ -21,8 +21,6 @@ jobs:
           SERVICE="${{ github.event.client_payload.service }}"
           TAG="${{ github.event.client_payload.tag }}"
           
-          # Assuming values file path structure: environments/prod/values-<service>.yaml
-          # This should be adjusted based on the exact pathing in the gitops repo
           VALUES_FILE="environments/prod/${SERVICE}-values.yaml"
           
           if [ -f "$VALUES_FILE" ]; then
@@ -44,11 +42,8 @@ jobs:
 
       - name: Wait for ArgoCD Sync & Health
         run: |
-          # Requires argocd CLI installed and configured via ARGOCD_SERVER/ARGOCD_AUTH_TOKEN
-          # argocd app wait ${{ github.event.client_payload.service }}-app --health
           echo "Simulating ArgoCD Wait for demonstration purposes"
 
       - name: Smoke Tests
         run: |
           echo "Running lightweight smoke test against ${{ github.event.client_payload.service }}"
-          # curl -f http://${{ github.event.client_payload.service }}.prod.internal/health
