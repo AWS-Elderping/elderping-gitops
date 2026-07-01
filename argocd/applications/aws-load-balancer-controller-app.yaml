@@ -14,7 +14,10 @@ spec:
     helm:
       values: |
         clusterName: elderpinq-dev-eks
-        vpcId: vpc-05e01c1be7793446a
+        # vpcId intentionally omitted: the controller auto-detects the VPC
+        # from the EC2 instance metadata of the node it runs on. Hardcoding
+        # this previously went stale across VPC re-creations and silently
+        # broke ALB ingress subnet auto-discovery.
         serviceAccount:
           create: true
           name: aws-load-balancer-controller
