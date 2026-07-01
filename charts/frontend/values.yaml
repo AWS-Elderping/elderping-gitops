@@ -24,6 +24,18 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+    - host: doctor.elderping.online
+      paths:
+        - path: /
+          pathType: Prefix
+    - host: family.elderping.online
+      paths:
+        - path: /
+          pathType: Prefix
+    - host: elder.elderping.online
+      paths:
+        - path: /
+          pathType: Prefix
 
 resources:
   limits:
