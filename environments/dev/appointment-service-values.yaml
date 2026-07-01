@@ -13,4 +13,4 @@ env:
   dbName: "appointment_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-appointment-service
-  tag: "b8e214f1594c2aa9bff89c3ee2429faacad5fd2f"
+  tag: "898edbd010dc60a35e122bcfb27056e1100b4368"
