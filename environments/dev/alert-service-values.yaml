@@ -13,4 +13,4 @@ env:
   dbName: "alert_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-alert-service
-  tag: "7c559b15a726c202b0e62d815e66fc5c82a1d969"
+  tag: "3c9a4290075db821bcf9ced9e1072e994980656a"
