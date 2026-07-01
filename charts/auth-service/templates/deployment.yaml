@@ -60,3 +60,8 @@ spec:
                 secretKeyRef:
                   name: {{ .Release.Name }}-secrets
                   key: superadmin-password
+            - name: AUDIT_SERVICE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secrets
+                  key: audit-service-token
