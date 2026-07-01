@@ -13,4 +13,4 @@ env:
   dbName: "finops_db_dev"
 image:
   repository: 462355914183.dkr.ecr.us-east-1.amazonaws.com/elderpinq-dev-finops-service
-  tag: "4f49245a552a5ff676c862f5e4b9361e70a3678b"
+  tag: "71ed5fa154feac8efa5f1d0347b27ec334565295"
